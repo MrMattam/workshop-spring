@@ -1,4 +1,4 @@
-package fr.mbonnot.workshop.wsspring.api;
+package fr.mbonnot.workshop.spring.discovery.api;
 
 
 import fr.mbo.workshops.solution.Menu;
@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import static org.springframework.web.bind.annotation.RequestMethod.DELETE;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
@@ -32,6 +33,15 @@ public class PizzaController {
         return this.restaurant.getMenu();
     }
 
+    @RequestMapping(value = "/pizzas/delete", produces = "application/json", method = DELETE)
+    public Menu removePizza(String name) {
+        this.restaurant.getMenu()
+                .getPizzas()
+                .stream()
+                // TODO. finish this!
+                .filter(pizza -> pizza.getName().equals(name));
+        return this.restaurant.getMenu();
+    }
 
 
 }

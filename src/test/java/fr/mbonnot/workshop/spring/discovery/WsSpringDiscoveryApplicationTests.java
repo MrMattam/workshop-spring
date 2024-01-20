@@ -1,10 +1,10 @@
-package fr.mbonnot.workshop.wsspring;
+package fr.mbonnot.workshop.spring.discovery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WsSpringApplicationTests {
+class WsSpringDiscoveryApplicationTests {
 
 	@Test
 	void contextLoads() {

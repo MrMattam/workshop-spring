@@ -1,13 +1,13 @@
-package fr.mbonnot.workshop.wsspring;
+package fr.mbonnot.workshop.spring.discovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WsSpringApplication {
+public class WsSpringDiscoveryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WsSpringApplication.class, args);
+		SpringApplication.run(WsSpringDiscoveryApplication.class, args);
 	}
 
 }

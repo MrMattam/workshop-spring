@@ -1,4 +1,4 @@
-package fr.mbonnot.workshop.wsspring.config;
+package fr.mbonnot.workshop.spring.discovery.config;
 
 import fr.mbo.workshops.solution.Restaurant;
 import org.springframework.context.annotation.Bean;
