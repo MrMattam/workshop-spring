@@ -1,4 +1,4 @@
-package fr.mbonnot.workshop.spring.discovery;
+package fr.mbo.workshop.spring.discovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
