@@ -1,0 +1,14 @@
+services:
+  db-ada:
+    image: postgres:15.3-alpine
+    container_name: adatech-postgres
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=adatech
+    ports:
+      - '5432:5432'
+    volumes:
+      - adatech-service:/var/lib/postgresql/data
+volumes:
+  adatech-service:
+    driver: local
